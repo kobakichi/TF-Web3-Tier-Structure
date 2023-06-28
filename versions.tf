@@ -14,11 +14,12 @@ terraform {
 }
 # Specify regions and set default tags
 provider "aws" {
- region = "ap-northeast-1"
+  region = "ap-northeast-1"
 
- default_tags {
-   tags = {
-    Env = "TF-Web3-Tier"
-    Owner = "kobakichi"
-   }
+  default_tags {
+    tags = {
+      Env   = "TF-Web3-Tier"
+      Owner = "kobakichi"
+    }
+  }
 }
